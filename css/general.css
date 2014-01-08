@@ -105,6 +105,10 @@ button:active {
 .download a {
 	text-decoration: none;
 }
+
+.download-2 {
+	display: none;
+}
    
 .spacer-top {
 	padding-top: 15%;
@@ -139,8 +143,101 @@ footer a {
 	letter-spacing: 1px;
 }
 
-@media only screen and (min-width: 24em) {
+@media only screen and (min-width: 20em) {
 	
+.download button{
+	margin-top: 60%;
+}	
+	
+}
+
+
+@media only screen and (min-width: 25em) {
+	
+.download button{
+	margin-top: 40%;
+}	
+	
+}
+
+@media only screen and (min-width: 35em) {
+	
+.download button{
+	margin-top: 20%;
+}	
+	
+}
+
+@media only screen and (min-width: 40em) {
+	
+.iphone img {
+	max-width: 287px;
+}	
+
+.logo img{
+	width: 5%;
+	padding-right: 80%;
+	max-width: 64px;
+	margin-top: 0;
+}
+
+.logo {
+	padding: 0;
+}
+
+h1 {
+	font-size: .75em;
+	padding-right: 80%;
+	margin-top: 1%;
+}
+
+.name {
+	padding-left: 5%;
+	padding-top: 2%;
+}
+
+button {
+	visibility: hidden;
+}
+
+.download-2 {
+	display: block;
+	margin-top: -4%;
+}
+
+.download-2 img{
+	width: 20%;
+	padding-left: 75%;
+}
+
+.video-top {
+	padding-top: 15%;
+}
+
+.video-top p { 
+   color: white; 
+   font-family: Helvetica, Arial, sans-serif; 
+   padding-top: 0; 
+   padding-left: 8%;
+   font-size: 5em;
+   line-height: .9em;
+}
+
+.iphone img {
+	display: none;
+}
+
+.video-word {
+	width: auto;
+	height: 450px;
+	background-image: url(../img/sample-page.png);
+	background-repeat: no-repeat;
+	background-size: 30%;
+	background-position: right;
+	position: relative;
+}
+
+
 	
 }
 
