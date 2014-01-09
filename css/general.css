@@ -143,6 +143,18 @@ footer a {
 	letter-spacing: 1px;
 }
 
+.hair-photo {
+	display: none;
+}
+
+.hair-photo img{
+	display: none;
+}
+
+.large-screen {
+	display: none;
+}
+
 @media only screen and (min-width: 20em) {
 	
 .download button{
@@ -237,10 +249,222 @@ button {
 	position: relative;
 }
 
-
+.background-img {
+	background-position: center;
+}
 	
 }
 
+@media only screen and (min-width: 50em) {
 
+.video-word {
+	display: none;
+}
 
+.hair-photo {
+	display: block;
+	background-image: url(../img/hair.jpg);
+	width: auto;
+	height: 450px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: right;
+	position: relative;
+}
 
+.hair-photo img{
+	display: block;
+	width: 40%;
+	padding-left: 5%;
+	padding-top: 5%;
+}
+
+.hair-photo p { 
+   color: white; 
+   font-family: Helvetica, Arial, sans-serif; 
+   padding-top: 0; 
+   padding-left: 5%;
+   font-size: 2em;
+   line-height: .9em;
+   padding-top: 5%;
+}
+
+.name {
+	display: none;
+}
+
+.download-2 {
+	margin-top: 2%;
+}
+
+.download-2 img{
+	width: 15%;
+	padding-left: 80%;
+}
+
+.logo img{
+	margin-top: -10%;
+}
+
+h1 {
+	padding-bottom: 2%;
+}
+
+}
+
+@media only screen and (min-width: 56em) {
+	
+.hair-photo p {
+	display: none;
+}
+
+.hair-photo {
+	background-size: 100%;
+}
+	
+.large-screen {
+	display: block;
+	width: 100%;
+	height: 475px;
+	background-color: black;
+}
+
+.left {
+	float: left;
+	width: 30%;
+	padding-left: 10%;
+}
+
+.left p {
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	text-align: center;
+}
+
+.left img {
+	width: 40%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 7%;
+}
+
+h3 {
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.right {
+	float: right;
+	width: 30%;
+	padding-right: 10%;
+}
+
+.right p {
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	text-align: center;
+}
+
+.right img {
+	width: 45%;
+	padding-bottom: 7%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.download-2 {
+	margin-top: 5%;
+}
+
+.logo img{
+	margin-top: -12%;
+}
+
+h1 {
+	padding-bottom: 2%;
+}
+	
+}
+
+@media only screen and (min-width: 64em) {
+	
+.large-screen {
+	height: 525px;
+}	
+	
+}
+
+@media only screen and (min-width: 70em) {
+
+.hair-photo img{
+	display: block;
+	width: 30%;
+	padding-left: 5%;
+	padding-top: 5%;
+	padding-bottom: 10%;
+}	
+	
+}
+
+@media only screen and (min-width: 81em) {
+
+body {
+	width: 80%;
+	padding-left: 10%;
+	background-color: white;
+}
+
+.large-screen {
+	height: 600px;
+}
+
+.background-img {
+	background-color: #660033;
+}
+
+.download-2 {
+	background-color: #660033;
+	margin: 0;
+	padding-top: 5%;
+}
+
+h1 {
+	margin: 0;
+	background-color: #660033;
+}
+	
+}
+
+@media only screen and (min-width: 99em) {
+
+.hair-photo {
+	width: 100%;
+	background-size: 80%;
+	background-position: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #000;	
+}
+
+.hair-photo img {
+	width: 30%;
+	padding-left: 10%;
+}
+
+}
+
+@media only screen and (min-width: 130em) {
+
+.hair-photo img {
+	width: 25%;
+}
+
+}
