@@ -104,6 +104,9 @@ button {
    margin-top: 25%;
 }
 
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
 .previous {
    background: #ffffff;
    padding: 3px 8px;

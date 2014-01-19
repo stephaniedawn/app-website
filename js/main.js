@@ -36,3 +36,5 @@ $('.previous').on('click', function () {
 	
 	switchItem(current, next);
 });
+
+document.addEventListener("touchstart", function(){}, true);
