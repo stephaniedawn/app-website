@@ -38,3 +38,21 @@ $('.previous').on('click', function () {
 });
 
 document.addEventListener("touchstart", function(){}, true);
+
+
+
+var $videoDialog = $('dialog');
+dialogPolyfill.registerDialog($videoDialog.get(0));
+
+$('.btn-open').on('click', function () {
+	$videoDialog.children('.video').html('<iframe src="http://player.vimeo.com/video/81320780?color=ffffff&amp;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+	//$videoDialog.show();        (This is triggering JS version of show. We bypass this with the following):
+	//.get() is the raw/native JS element we need to use:
+	$videoDialog.get(0).showModal();
+	//.showModal() disables everything else from being interacted with (stuff behind the dialog) .show() allows users to interact with stuff behind the dialog.
+});
+
+$('.btn-close').on('click', function () {
+	$videoDialog.get(0).close();
+	$videoDialog.children('.video').html('');
+});

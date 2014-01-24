@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>App Website</title>
 <link href="css/general.css" rel="stylesheet">
+<link href="css/dialog-polyfill.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Podkova' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -17,7 +18,14 @@
 	<h1>MY SALON</h1>
 			
 
-	<div class="iphone video-word"><div class="video-top"><p>GET FAB<br> HAIR<br> QUICKLY.</p><img src="img/sample-page.png" alt="video sample photo"></div></div>
+	<div class="iphone video-word">
+		<div class="center-button"><a class="btn-open" href="#"><p>Watch Video!<p></a></div>
+		<div class="video-top"><p>GET FAB<br> HAIR<br> QUICKLY.</p><img src="img/sample-page.png" alt="video sample photo">
+	<dialog>
+		<div class="video"></div>
+		<button class="btn-close">X</button>
+	</dialog></div>
+	</div>
 	
 		<div class="hair-photo"><img src="http://placehold.it/200x150"><p>GET FAB<br> HAIR<br> QUICKLY.</p></div>	
 	
@@ -65,6 +73,7 @@
 
 
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>	
+<script src="js/dialog-polyfill.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
