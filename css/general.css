@@ -257,6 +257,23 @@ footer a {
 	display: none;
 }
 
+.video-wrapper {
+	display: none;
+}
+
+.embed-video {
+	position: relative;
+	padding-top: 56.25%;
+}
+
+.embed-video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 .large-screen {
 	display: none;
 }
@@ -338,12 +355,6 @@ iframe {
 }
 
 @media only screen and (min-width: 36em) {
-	
-.video {
-	width: 400px;
-	height: 193px;
-	margin: 0;
-}
 
 .btn-close {
 	display: inline-block;
@@ -455,11 +466,16 @@ button {
    font-size: 15px;
    margin-left: 2%;
 }
+
+.video {
+	width: 500px;
+	height: 241px;
+	margin: 0;
+}
 	
 }
 
 @media only screen and (min-width: 50em) {
-
 
 .video-word {
 	display: none;
@@ -476,7 +492,7 @@ button {
 	position: relative;
 }
 
-.hair-photo img{
+.video-wrapper {
 	display: block;
 	width: 40%;
 	padding-left: 5%;
@@ -613,7 +629,7 @@ h1 {
 
 @media only screen and (min-width: 70em) {
 
-.hair-photo img{
+.embed-video img{
 	display: block;
 	width: 30%;
 	padding-left: 5%;
