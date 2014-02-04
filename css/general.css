@@ -89,16 +89,17 @@ dialog + .backdrop {
 }
 
 .scissor-wrapper {
-	
+	-webkit-transform: translateX(0px);
+	-webkit-animation: scissor-right-move 5s infinite;
+	width: 250px;
+	margin: 0 auto;	
 }
 
 .scissor-right {
 	position: absolute;
 	width: 250px;
 	top: -50px;
-	left: 5%;
-	-webkit-transform: translateX(0px);
-	-webkit-animation: scissor-right-move 5s infinite;
+	left: 0;
 }
 
 @-webkit-keyframes scissor-right-move {
@@ -106,12 +107,10 @@ dialog + .backdrop {
 		-webkit-transform: translateX(0px);
 	}
 	25% {
-		
-	}
-	50% {
 		-webkit-transform: translateX(110px);
 	}
 	75% {
+		-webkit-transform: translateX(-110px);
 	}
 	100% {
 		-webkit-transform: translateX(0px);
@@ -122,9 +121,8 @@ dialog + .backdrop {
 	position: absolute;
 	width: 250px;
 	top: -50px;
-	left: 5%;
 	-webkit-transform: translateX(0px);
-	-webkit-animation: scissor-left-move 5s infinite;
+	-webkit-animation: scissor-left-rotate 2s infinite;
 }
 
 @-webkit-keyframes scissor-left-move {
@@ -148,13 +146,21 @@ dialog + .backdrop {
 	0% {
 		-webkit-transform: rotate(0deg);
 	}
-	
-	50% {
+	20% {
 		-webkit-transform: rotate(-21deg);
 	}
 	
-	100% {
+	40% {
 		-webkit-transform: rotate(0deg);
+	}
+	60% {
+		-webkit-transform: rotate(-21deg);
+	}
+	80% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(-21deg);
 	}
 
 }
@@ -317,57 +323,6 @@ footer img {
 	width: 5%;
 }
 
-.hairspray-animation {
-	background-color: #000;
-}
-
-.bottle {
-	float: left;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	width: 45%;
-	padding: 2%;
-}
-
-.bottle img{
-	width: 20%;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	margin-left: 80%;
-}
-
-.spray {
-	float: right;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	width: 45%;
-	padding: 2%;
-}
-
-.spray img{
-	position: absolute;
-	width: 5%;
-	margin-left: 0;
-}
-
-.js-spray-animate {
-	-webkit-animation: spray-fade 3s linear 1 forwards;
-	/* How to apply styles before and after animating. 
-	'forwards' - retains the last computed animation values.
-	animation-fill-mode: forwards; */
-}
-
-@-webkit-keyframes spray-fade {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1; 
-	}
-}
 
 .hair-photo {
 	display: none;
@@ -438,12 +393,6 @@ footer img {
 	margin-top: 40%;
 }
 
-.scissor-right {
-	left: 15%;
-}
-
-.scissor-left {
-	left: 15%;	
 }
 
 @media only screen and (min-width: 27.5em) {
@@ -514,11 +463,6 @@ iframe {
 	max-width: 287px;
 }	
 
-h1 {
-	font-size: 2em;
-	padding-right: 60%;
-	margin-top: 1%;
-}
 
 .name {
 	padding-left: 5%;
@@ -592,62 +536,9 @@ button {
 
 @media only screen and (min-width: 45em) {
 
-.scissor-right {
-	position: absolute;
-	width: 250px;
-	top: -50px;
-	left: 15%;
-	-webkit-transform: translateX(0px);
-	-webkit-animation: scissor-right-move 10s infinite;
-}
-
 h1 {
 	font-size: 3em;
-	padding-right: 50%;
 	margin-top: 1%;
-}
-
-@-webkit-keyframes scissor-right-move {
-	0% {
-		-webkit-transform: translateX(0px);
-	}
-	25% {
-		
-	}
-	50% {
-		-webkit-transform: translateX(300px);
-	}
-	75% {
-	}
-	100% {
-		-webkit-transform: translateX(0px);
-	}
-}
-
-.scissor-left {
-	position: absolute;
-	width: 250px;
-	top: -50px;
-	left: 15%;
-	-webkit-transform: translateX(0px);
-	-webkit-animation: scissor-left-move 10s infinite;
-}
-
-@-webkit-keyframes scissor-left-move {
-	0% {
-		-webkit-transform: translateX(0px);
-	}
-	25% {
-		
-	}
-	50% {
-		-webkit-transform: translateX(300px);
-	}
-	75% {
-	}
-	100% {
-		-webkit-transform: translateX(0px);
-	}
 }
 
 }
@@ -697,10 +588,6 @@ h1 {
 .download-2 img{
 	width: 15%;
 	padding-left: 80%;
-}
-
-h1 {
-	padding-bottom: 2%;
 }
 
 }
@@ -776,9 +663,6 @@ h3 {
 	margin-top: 4%;
 }
 
-h1 {
-	padding-bottom: 2%;
-}
 	
 }
 
@@ -808,65 +692,7 @@ h1 {
 
 h1 {
 	font-size: 5em;
-	padding-right: 50%;
 	margin-top: 1%;
-}
-	
-}
-
-@media only screen and (min-width: 74em) {
-	
-.scissor-right {
-	position: absolute;
-	width: 250px;
-	top: -50px;
-	left: 15%;
-	-webkit-transform: translateX(0px);
-	-webkit-animation: scissor-right-move 10s infinite;
-}
-
-@-webkit-keyframes scissor-right-move {
-	0% {
-		-webkit-transform: translateX(0px);
-	}
-	25% {
-		
-	}
-	50% {
-		-webkit-transform: translateX(600px);
-	}
-	75% {
-	}
-	100% {
-		-webkit-transform: translateX(0px);
-	}
-}
-
-.scissor-left {
-	position: absolute;
-	width: 250px;
-	top: -50px;
-	left: 15%;
-	-webkit-transform: translateX(0px);
-	-webkit-animation: scissor-left-move 10s infinite;
-}
-
-@-webkit-keyframes scissor-left-move {
-	
-	0% {
-		-webkit-transform: translateX(0px);
-	}
-	25% {
-		
-	}
-	50% {
-		-webkit-transform: translateX(600px);
-	}
-	75% {
-	}
-	100% {
-		-webkit-transform: translateX(0px);
-	}
 }
 
 }

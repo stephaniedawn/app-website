@@ -1,5 +1,11 @@
 var $items = $('.items img');
-var $spray = $('.spray img');
+var $spray = $('.spray');
+
+
+
+$('.spray').waypoint(function () {
+	$spray.addClass('js-spray-animate');
+}, { offset: '80%' });
 
 var switchItem = function (current, incoming) {
 	$items.eq(incoming).attr('data-state', 'incoming').fadeIn(250, function () {
@@ -58,7 +64,3 @@ $('.btn-close').on('click', function () {
 	$videoDialog.children('.video').html('');
 });
 
-
-$('.hairspray-animation').waypoint(function () {
-	$spray.addClass('js-spray-animate');
-}, { offset: '60%' });
