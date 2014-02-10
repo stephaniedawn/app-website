@@ -2,11 +2,6 @@ var $items = $('.items img');
 var $spray = $('.spray');
 
 
-
-$('.spray').waypoint(function () {
-	$spray.addClass('js-spray-animate');
-}, { offset: '80%' });
-
 var switchItem = function (current, incoming) {
 	$items.eq(incoming).attr('data-state', 'incoming').fadeIn(250, function () {
 		$items.eq(current).hide().attr('data-state', '');
@@ -63,4 +58,33 @@ $('.btn-close').on('click', function () {
 	$videoDialog.get(0).close();
 	$videoDialog.children('.video').html('');
 });
+
+
+// Testimonials:
+
+var $random = $('.random');
+var num = Math.round( Math.random() * 2 );
+var file = 'test-' + num + '.html';
+
+$random.load(file);
+
+
+var $testData = $.ajax('test.json', {
+	dataType: 'json' 
+});
+
+$testData.done(function (data) {
+	var rand = Math.round( Math.random() * (data.length - 1));
+	
+	$('.tester-name').html( data[rand].tester-name );
+	$('.name').html( data[rand].name );
+	$('.location').html( data[rand].location );
+});
+
+
+
+
+
+
+
 
